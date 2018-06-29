@@ -1,0 +1,32 @@
+{
+  "name": "grupo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "mysql": {
+    "table": "grupo"
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "baja_logica": {
+      "type": "number",
+      "required": true
+    },
+    "fecha_creacion": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

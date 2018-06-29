@@ -1,0 +1,38 @@
+{
+  "name": "afiliacion",
+  "plural": "afiliaciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "mysql": {
+    "table": "afiliacion"
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "required": true
+    },
+    "id_usuario": {
+      "type": "number",
+      "required": true
+    },
+    "id_grupo": {
+      "type": "number",
+      "required": true
+    },
+    "baja_logica": {
+      "type": "number",
+      "required": true
+    },
+    "fecha_creacion": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+  },
+  "acls": [],
+  "methods": {}
+}

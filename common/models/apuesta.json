@@ -1,0 +1,76 @@
+{
+  "name": "apuesta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "mysql": {
+    "table": "apuesta"
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "jugador": {
+      "type": "string",
+      "required": true
+    },
+    "docJugador": {
+      "type": "string",
+      "required": true
+    },
+    "partidoId": {
+      "type": "number",
+      "required": true
+    },
+    "equipoLocalId": {
+      "type": "number",
+      "required": true
+    },
+    "equipoLocalCodigo": {
+      "type": "string",
+      "required": true
+    },
+    "equipoLocalGoles": {
+      "type": "number",
+      "required": true
+    },
+    "equipoVisitaId": {
+      "type": "number",
+      "required": true
+    },
+    "equipoVisitaCodigo": {
+      "type": "string",
+      "required": true
+    },
+    "equipoVisitaGoles": {
+      "type": "number",
+      "required": true
+    },
+    "baja_logica": {
+      "type": "number",
+      "required": false
+    },
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "equipoLocalGolesReales": {
+      "type": "number",
+      "required": true
+    },
+    "equipoVisitaGolesReales": {
+      "type": "number",
+      "required": true
+    },
+    "puntos": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

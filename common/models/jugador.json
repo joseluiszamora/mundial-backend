@@ -1,0 +1,50 @@
+{
+  "name": "jugador",
+  "plural": "jugadores",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "mysql": {
+    "table": "jugador"
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "tipo_usuario": {
+      "type": "string",
+      "required": true
+    },
+    "ci": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "grupo": {
+      "type": "string",
+      "required": false
+    },
+    "baja_logica": {
+      "type": "number",
+      "required": true
+    },
+    "puntos": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
