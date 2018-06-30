@@ -34,6 +34,16 @@
     "type": "",
     "url": ""
   },
+  "deploy": {
+    "production": {
+      "user": "root",
+      "host": "138.68.62.23",
+      "ref": "origin/master",
+      "repo": "https://github.com/joseluiszamora/mundial-backend.git",
+      "path": "/home/jzamora/lb/mundial-backend/",
+      "post-deploy": "npm install && pm2 restart mundial"
+    }
+  },
   "license": "UNLICENSED",
   "description": "AUTHENTICATIONSERVER"
 }
